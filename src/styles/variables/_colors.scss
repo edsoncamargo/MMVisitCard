@@ -1,0 +1,7 @@
+@use "../utils/mixins/variables" as variables;
+
+$colors: (
+  color-neutral-0: #fff,
+);
+
+@include variables.generateVariables($colors);

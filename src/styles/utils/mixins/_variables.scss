@@ -1,0 +1,14 @@
+@mixin generateVariables($array, $isTheme: false) {
+  @each $variable, $color in $array {
+    @debug "#{$variable}: #{$color}";
+
+    @if $isTheme {
+      --mm-#{$variable}: #{$color};
+    } @else {
+      .mm-blue-theme,
+      .mm-red-theme {
+        --mm-#{$variable}: #{$color};
+      }
+    }
+  }
+}

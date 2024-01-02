@@ -1,0 +1,75 @@
+.mm-social-medias {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .i {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+    background-position: center;
+    background-size: contain;
+    opacity: 0;
+    animation: fadeInBottom ease-in-out 2s forwards;
+    -webkit-animation: fadeInBottom ease-in-out 2s forwards;
+    transition: all 0.3 ease-in-out;
+    cursor: pointer;
+
+    @media (max-width: 728px) {
+      width: 20px;
+      height: 20px;
+      margin-bottom: 8px;
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    &:hover {
+      transform: translateX(-12px);
+    }
+
+    &.mm-email {
+      background-image: url(../../../assets/icons/square-envelope-solid.svg);
+      animation-delay: 6s;
+      -webkit-animation-delay: 6s;
+    }
+
+    &.mm-whatsapp {
+      background-image: url(../../../assets/icons/square-whatsapp.svg);
+      animation-delay: 6.3s;
+      -webkit-animation-delay: 6.3s;
+    }
+
+    &.mm-linkedin {
+      background-image: url(../../../assets/icons/linkedin.svg);
+      animation-delay: 6.6s;
+      -webkit-animation-delay: 6.6s;
+    }
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    transform: translateX(32px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInBottom {
+  0% {
+    transform: translateX(32px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}

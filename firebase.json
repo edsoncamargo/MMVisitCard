@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "public": "dist/mm-home-care",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

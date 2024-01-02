@@ -1,0 +1,6 @@
+@use "../utils/mixins/variables" as variables;
+@use "../utils/mixins/classes" as classes;
+
+@include variables.generateVariables($colors);
+@include classes.generateClass($colors, "bg", "background-color");
+@include classes.generateClass($colors, "text-color", "color");

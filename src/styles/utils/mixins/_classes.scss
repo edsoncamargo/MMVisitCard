@@ -1,0 +1,8 @@
+@mixin generateClass($array, $class, $property) {
+  @each $name, $value in $array {
+    .mm-#{$class}-#{$name} {
+      @debug ".mm-#{$class}-#{$name}";
+      #{$property}: var(--mm-#{$name});
+    }
+  }
+}

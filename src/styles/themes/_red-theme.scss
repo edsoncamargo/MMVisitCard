@@ -1,0 +1,16 @@
+@use "../utils/mixins/variables" as variables;
+@use "../utils/mixins/classes" as classes;
+
+$red-theme-colors: (
+  color-primary-1: #35172b,
+  color-primary-2: #41152e,
+  color-primary-3: #502538,
+  color-primary-4: #61253a,
+);
+
+.mm-red-theme {
+  @include variables.generateVariables($red-theme-colors, true);
+}
+
+@include classes.generateClass($red-theme-colors, "bg", "background-color");
+@include classes.generateClass($red-theme-colors, "text-color", "color");

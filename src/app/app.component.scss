@@ -1,0 +1,29 @@
+main {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  transition: background-color 1s ease-in-out;
+
+  .mm-water-mark {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    overflow: hidden;
+  }
+
+  &.mm-blue-theme {
+    .mm-water-mark {
+      background-image: url(../assets/images/background_blue.svg);
+    }
+  }
+
+  &.mm-red-theme {
+    .mm-water-mark {
+      background-image: url(../assets/images/background_red.svg);
+    }
+  }
+}
