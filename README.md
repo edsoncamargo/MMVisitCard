@@ -1,27 +1,58 @@
-# MmHomeCare
+# MMVisitCard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+![VisitCard](./src/assets/images/thumb.png)
 
-## Development server
+**MMVisitCard** is an Angular SPA that replicates the elegance of a physical business card. It serves as a digital representation of the exceptional home care nursing services provided by Malu Monique. The SPA includes responsive design, contact information, and detailed service descriptions.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technology
 
-## Code scaffolding
+Key technologies and tools employed in the development of this SPA:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular/SCSS**: Core technologies for creating a dynamic and responsive user interface.
+- **Flexbox**: Utilized to create flexible and responsive layouts.
 
-## Build
+## Card-Inspired Layout
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Drawing inspiration from physical business cards, MMVisitCard offers a sleek and intuitive layout. The design focuses on simplicity and clarity, ensuring a user-friendly experience.
 
-## Running unit tests
+## Contact and Services
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The SPA prominently features contact details, including phone numbers, email addresses, and social media links, allowing users to connect with Malu Monique effortlessly. Service information is presented concisely, providing an overview of the nursing expertise offered.
 
-## Running end-to-end tests
+## Viewing MMVisitCard Locally
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To explore MMVisitCard on your local machine, follow these steps:
 
-## Further help
+1. Clone the repository:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+  git clone https://github.com/edsoncamargo/MMVisitCard
+  cd your-path/MMVisitCard
+```
+
+2. Install the dependencies:
+
+```bash
+  npm install
+```
+
+3. Start the development server:
+
+```bash
+  ng serve -o
+```
+
+## Contribution
+
+Contributions to enhance and refine MMVisitCard are encouraged. If you have suggestions, encounter issues, or wish to contribute new features, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT LICENSE](./LICENSE).
+
+## Contact
+
+- Name: Edson Camargo Menezes
+- Email: contact@edsoncamargo.dev
+
+Embark on a digital journey with MMVisitCard and discover the essence of home care nursing by Malu Monique 🌿
